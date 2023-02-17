@@ -139,7 +139,6 @@ while True:
         print ( " topm: ", args.topm, " mf: ", args.mf)
         print('overall Recall for',count,'points:',score_sum[0]/((bthN-1)*batch_size + i))
         print('Avg can. size for',count,'points:',score_sum[1]/((bthN-1)*batch_size + i))
-        pdb.set_trace()
         print('Inf per point: ',Inf/((bthN-1)*batch_size))
         print('Ret+rank per point: ',RetRank/((bthN-1)*batch_size))
         print('per point to report: ',(Inf/32 + RetRank/4)/((bthN-1)*batch_size))
